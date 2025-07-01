@@ -38,7 +38,7 @@ def generate_weather_data():
         
         # Validate data ranges
         if np.any(temperature_data < -50) or np.any(temperature_data > 60):
-            raise ValueError("Temperature data contains unrealistic values")
+            raise ValueError("Temperature data contain unrealistic values")
         if np.any(humidity_data < 0) or np.any(humidity_data > 100):
             raise ValueError("Humidity data contains unrealistic values")
         if np.any(wind_data < 0):
